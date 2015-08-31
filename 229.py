@@ -29,7 +29,8 @@ def option2(n):
                         y = 1*x*(1/x)
                         c = c + 1
                         if c > 500:
-                                raise RuntimeError("{} doesn't converge".format(n))
+                                err = "option2 #: {} doesn't converge".format(n)
+                                raise RuntimeError(err)
                 print("option2 #:", y)
 
         except RuntimeError as e:
